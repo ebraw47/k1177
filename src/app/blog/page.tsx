@@ -98,6 +98,62 @@ const posts = [
     readTime: '14 min read',
     featured: false,
   },
+  {
+    slug: 'sk777-bonus-daily-rewards-guide',
+    title: 'SK777 Bonus & Daily Rewards Guide 2026',
+    description: 'Welcome offers, daily rewards, wagering tips, and how to avoid fake VIP promos.',
+    readTime: '8 min read',
+    featured: false,
+  },
+  {
+    slug: 'how-to-play-sk777-on-pc',
+    title: 'How to Play SK777 on PC (BlueStacks & Emulators)',
+    description: 'Run the Android APK on Windows: requirements, install steps, and common PC errors.',
+    readTime: '9 min read',
+    featured: false,
+  },
+  {
+    slug: 'sk777-customer-service-account-help',
+    title: 'SK777 Customer Service & Account Help',
+    description: 'In-app support, login resets, deposit proofs, and how to spot fake agents.',
+    readTime: '7 min read',
+    featured: false,
+  },
+  {
+    slug: 'sk777-games-list-pakistan',
+    title: 'SK777 Games List Pakistan 2026',
+    description: 'What you can play: earning rounds, slots, prediction-style games, and lobby tips.',
+    readTime: '7 min read',
+    featured: false,
+  },
+  {
+    slug: 'sk777-invite-friends-referral-guide',
+    title: 'SK777 Invite Friends & Referral Guide',
+    description: 'Find your invite code, share safely, understand rewards, and avoid referral scams.',
+    readTime: '6 min read',
+    featured: false,
+  },
+  {
+    slug: 'sk777-minimum-deposit-pakistan',
+    title: 'SK777 Minimum Deposit Pakistan 2026',
+    description: 'Check the live min PKR amount, start small with JazzCash/EasyPaisa, and avoid deposit mistakes.',
+    readTime: '6 min read',
+    featured: false,
+  },
+  {
+    slug: 'sk777-withdrawal-pin-setup',
+    title: 'How to Set SK777 Withdrawal PIN',
+    description: 'Create your cash-out PIN, bind a wallet, and recover safely if you forget it.',
+    readTime: '6 min read',
+    featured: false,
+  },
+  {
+    slug: 'sk777-app-not-working-fix',
+    title: 'SK777 App Not Working? Common Fixes',
+    description: 'Crashes, login errors, and delayed deposits — update APK, network checks, and support tips.',
+    readTime: '8 min read',
+    featured: false,
+  },
 ] as const;
 
 export default function Blog() {

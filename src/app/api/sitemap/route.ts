@@ -10,6 +10,14 @@ const blogSlugs = [
   'sk777-withdraw-money-guide',
   'is-sk777-safe-legal-pakistan',
   'how-to-use-sk777-app-pakistan-guide',
+  'sk777-bonus-daily-rewards-guide',
+  'how-to-play-sk777-on-pc',
+  'sk777-customer-service-account-help',
+  'sk777-games-list-pakistan',
+  'sk777-invite-friends-referral-guide',
+  'sk777-minimum-deposit-pakistan',
+  'sk777-withdrawal-pin-setup',
+  'sk777-app-not-working-fix',
 ];
 
 export async function GET() {

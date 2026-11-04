@@ -14,6 +14,14 @@ const BlogCategoryDropdown = () => {
     { name: 'App Review', href: '/blog/sk777-app-review-2026' },
     { name: 'Safety', href: '/blog/is-sk777-safe-legal-pakistan' },
     { name: 'Beginner Guide', href: '/blog/how-to-use-sk777-app-pakistan-guide' },
+    { name: 'Bonus & Rewards', href: '/blog/sk777-bonus-daily-rewards-guide' },
+    { name: 'Play on PC', href: '/blog/how-to-play-sk777-on-pc' },
+    { name: 'Customer Service', href: '/blog/sk777-customer-service-account-help' },
+    { name: 'Games List', href: '/blog/sk777-games-list-pakistan' },
+    { name: 'Invite Friends', href: '/blog/sk777-invite-friends-referral-guide' },
+    { name: 'Minimum Deposit', href: '/blog/sk777-minimum-deposit-pakistan' },
+    { name: 'Withdrawal PIN', href: '/blog/sk777-withdrawal-pin-setup' },
+    { name: 'App Not Working', href: '/blog/sk777-app-not-working-fix' },
   ];
 
   return (
