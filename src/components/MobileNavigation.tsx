@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, type ReactNode } from 'react';
+import { createPortal } from 'react-dom';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -13,7 +14,7 @@ type NavItem = {
 };
 
 const Chevron = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 text-gray-600" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 text-muted/60" aria-hidden="true">
     <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
   </svg>
 );
@@ -29,7 +30,7 @@ const MAIN_LINKS: NavItem[] = [
     ),
   },
   {
-    href: '/download-sk777',
+    href: '/download-k1177',
     label: 'Download',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
@@ -41,7 +42,7 @@ const MAIN_LINKS: NavItem[] = [
 
 const GUIDE_LINKS: NavItem[] = [
   {
-    href: '/deposit-money-in-sk777',
+    href: '/deposit-money-in-k1177',
     label: 'Deposit Guide',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
@@ -50,7 +51,7 @@ const GUIDE_LINKS: NavItem[] = [
     ),
   },
   {
-    href: '/withdraw-money-from-sk777',
+    href: '/withdraw-money-from-k1177',
     label: 'Withdraw Guide',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
@@ -59,7 +60,7 @@ const GUIDE_LINKS: NavItem[] = [
     ),
   },
   {
-    href: '/sk777-for-pc',
+    href: '/k1177-for-pc',
     label: 'PC Version',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
@@ -112,7 +113,7 @@ function NavSection({
 }) {
   return (
     <div className="mb-2">
-      <p className="text-[11px] font-semibold tracking-widest text-gray-500 uppercase px-1 pt-5 pb-2">
+      <p className="text-[11px] font-semibold tracking-widest text-muted/70 uppercase px-1 pt-5 pb-2">
         {title}
       </p>
       <ul className="space-y-0.5">
@@ -128,12 +129,12 @@ function NavSection({
                 href={item.href}
                 onClick={onNavigate}
                 className={`flex items-center gap-4 px-1 py-3.5 transition-colors group ${
-                  isActive ? 'text-accent' : 'text-white hover:text-accent'
+                  isActive ? 'text-accent' : 'text-ink hover:text-accent'
                 }`}
               >
                 <span
                   className={`transition-colors flex-shrink-0 ${
-                    isActive ? 'text-accent' : 'text-gray-400 group-hover:text-accent'
+                    isActive ? 'text-accent' : 'text-muted/80 group-hover:text-accent'
                   }`}
                 >
                   {item.icon}
@@ -185,6 +186,51 @@ export default function MobileNavigation() {
 
   const close = () => setIsOpen(false);
 
+  const menu =
+    isOpen &&
+    createPortal(
+      <div
+        className="fixed inset-0 z-[100] flex flex-col bg-[#062816] md:hidden"
+        style={{
+          backgroundImage:
+            "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cpath d='M24 4 L44 24 L24 44 L4 24 Z' fill='none' stroke='%231a8f52' stroke-opacity='0.12' stroke-width='1'/%3E%3C/svg%3E\")",
+        }}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Mobile navigation"
+      >
+        <div className="flex justify-between items-center px-5 py-4 border-b border-accent/20 shrink-0">
+          <Link href="/" className="flex items-center" onClick={close}>
+            <span className="k1177-wordmark k1177-wordmark--nav text-xl">K1177</span>
+          </Link>
+          <button
+            onClick={close}
+            className="flex items-center justify-center w-10 h-10 rounded-full bg-secondary text-ink hover:bg-cyan/20 transition-colors"
+            aria-label="Close menu"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div className="relative flex-1 min-h-0 overflow-y-auto overscroll-contain">
+          <div className="absolute right-0 top-0 bottom-0 w-1 bg-cyan pointer-events-none" aria-hidden="true" />
+          <nav className="px-5 py-2 pb-6">
+            <NavSection title="MAIN" items={MAIN_LINKS} pathname={pathname} onNavigate={close} />
+            <NavSection title="GUIDES" items={GUIDE_LINKS} pathname={pathname} onNavigate={close} />
+            <NavSection title="INFO" items={INFO_LINKS} pathname={pathname} onNavigate={close} />
+          </nav>
+        </div>
+
+        <div className="px-5 pt-4 pb-8 border-t border-accent/20 flex flex-col items-center shrink-0 safe-area-pb">
+          <DownloadButton size="sm" label="DOWNLOAD K1177" />
+          <p className="text-center text-muted/70 text-xs mt-3">~51 MB · Android 5.0+ · V1.6</p>
+        </div>
+      </div>,
+      document.body
+    );
+
   return (
     <div className="md:hidden">
       <button
@@ -197,46 +243,7 @@ export default function MobileNavigation() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
-
-      {isOpen && (
-        <div className="fixed inset-0 z-50 flex flex-col bg-[#0a2744]" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cpath d='M24 4 L44 24 L24 44 L4 24 Z' fill='none' stroke='%233eb5e8' stroke-opacity='0.12' stroke-width='1'/%3E%3C/svg%3E\")" }}>
-          {/* Header */}
-          <div className="flex justify-between items-center px-5 py-4 border-b border-gray-800/80">
-            <Link href="/" className="flex items-center" onClick={close}>
-              <span className="font-logo italic font-bold text-xl tracking-tight text-accent">
-                SK777
-              </span>
-            </Link>
-            <button
-              onClick={close}
-              className="flex items-center justify-center w-10 h-10 rounded-full bg-[#0d3358] text-white hover:bg-[#15466e] transition-colors"
-              aria-label="Close menu"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-
-          {/* Scrollable nav */}
-          <div className="relative flex-1 overflow-y-auto">
-            <div className="absolute right-0 top-0 bottom-0 w-1 bg-cyan" aria-hidden="true" />
-            <nav className="px-5 py-2 pb-6">
-              <NavSection title="MAIN" items={MAIN_LINKS} pathname={pathname} onNavigate={close} />
-              <NavSection title="GUIDES" items={GUIDE_LINKS} pathname={pathname} onNavigate={close} />
-              <NavSection title="INFO" items={INFO_LINKS} pathname={pathname} onNavigate={close} />
-            </nav>
-          </div>
-
-          {/* Download CTA */}
-          <div className="px-5 pt-4 pb-8 border-t border-gray-800/80 flex flex-col items-center">
-            <DownloadButton size="sm" />
-            <p className="text-center text-gray-500 text-xs mt-3">
-              ~20MB · Android 5.0+ · 2026 Update
-            </p>
-          </div>
-        </div>
-      )}
+      {menu}
     </div>
   );
 }

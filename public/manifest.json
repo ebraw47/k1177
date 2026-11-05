@@ -1,11 +1,11 @@
 {
-  "name": "SK777",
-  "short_name": "SK777",
-  "description": "Pakistan's real-money gaming platform — slots, cards, fishing. JazzCash & EasyPaisa.",
+  "name": "K1177",
+  "short_name": "K1177",
+  "description": "K1177 Game — Pakistan online money app. Slots, cards, JazzCash & EasyPaisa.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0a2744",
-  "theme_color": "#0a2744",
+  "background_color": "#062816",
+  "theme_color": "#062816",
   "icons": [
     {
       "src": "/favicon-32.png",
@@ -18,12 +18,12 @@
       "type": "image/png"
     },
     {
-      "src": "/favicon.png",
-      "sizes": "32x32",
+      "src": "/favicon-192.png",
+      "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/SK777-Game-Icon.png",
+      "src": "/favicon.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

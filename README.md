@@ -1,33 +1,25 @@
-# SK777 — Pakistan Real-Money Gaming Site
+# K1177 — k1177apk.com.pk
 
-Official marketing site for **SK777** at [sk777app.com.pk](https://sk777app.com.pk).
+Official Pakistan info site for **K1177 Game** APK: download guides, JazzCash & EasyPaisa deposits/withdrawals, bonuses, and responsible 18+ play.
 
 ## Stack
 
-- Next.js 16 (App Router)
-- React 19
+- Next.js (App Router)
+- TypeScript
 - Tailwind CSS
 
-## Scripts
+## Setup
 
 ```bash
 npm install
+cp .env.example .env.local
 npm run dev
-npm run build
-npm start
 ```
 
-## Brand
+Set `NEXT_PUBLIC_SITE_URL=https://k1177apk.com.pk` and optionally `NEXT_PUBLIC_DOWNLOAD_URL` for the APK button.
 
-- Domain: `sk777app.com.pk`
-- Accent: neon green on dark charcoal
-- Assets: `/public/SK777-Game-Icon.png`, screenshots, and promo images
+## Scripts
 
-## Env (optional)
-
-```bash
-NEXT_PUBLIC_SITE_URL=https://sk777app.com.pk
-NEXT_PUBLIC_DOWNLOAD_URL=https://sk777vip3.bet/?dl=59dxnd
-NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
-NEXT_PUBLIC_FACEBOOK_URL=https://www.facebook.com/your-page
-```
+- `npm run dev` — local development
+- `npm run build` — production build
+- `npm start` — serve production build

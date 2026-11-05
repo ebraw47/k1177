@@ -1,23 +1,30 @@
 import { NextResponse } from 'next/server';
 
-const baseUrl = 'https://sk777app.com.pk';
+const baseUrl = 'https://k1177apk.com.pk';
 
 const blogSlugs = [
-  'sk777-app-review-2026',
-  'how-to-download-install-sk777-apk-pakistan',
-  'create-sk777-account-and-login',
-  'sk777-deposit-jazzcash-easypaisa-guide',
-  'sk777-withdraw-money-guide',
-  'is-sk777-safe-legal-pakistan',
-  'how-to-use-sk777-app-pakistan-guide',
-  'sk777-bonus-daily-rewards-guide',
-  'how-to-play-sk777-on-pc',
-  'sk777-customer-service-account-help',
-  'sk777-games-list-pakistan',
-  'sk777-invite-friends-referral-guide',
-  'sk777-minimum-deposit-pakistan',
-  'sk777-withdrawal-pin-setup',
-  'sk777-app-not-working-fix',
+  'k1177-app-review-2026',
+  'how-to-download-install-k1177-apk-pakistan',
+  'create-k1177-account-and-login',
+  'k1177-deposit-jazzcash-easypaisa-guide',
+  'k1177-withdraw-money-guide',
+  'is-k1177-safe-legal-pakistan',
+  'how-to-use-k1177-app-pakistan-guide',
+  'k1177-bonus-daily-rewards-guide',
+  'how-to-play-k1177-on-pc',
+  'k1177-customer-service-account-help',
+  'k1177-games-list-pakistan',
+  'k1177-invite-friends-referral-guide',
+  'k1177-minimum-deposit-pakistan',
+  'k1177-withdrawal-pin-setup',
+  'k1177-app-not-working-fix',
+  'k1177-fake-apk-scam-warnings',
+  'k1177-otp-not-received-login-fix',
+  'k1177-vip-member-day-guide',
+  'k1177-responsible-gaming-pakistan',
+  'k1177-update-apk-latest-version',
+  'k1177-bind-jazzcash-easypaisa-account',
+  'k1177-treasure-chest-jackpot-guide',
 ];
 
 export async function GET() {
@@ -39,37 +46,37 @@ export async function GET() {
       priority: 1.0,
       images: [
         {
-          loc: '/SK777-Game-Icon.png',
-          title: 'SK777 Hero Image',
-          caption: 'SK777 gaming platform showcase',
+          loc: '/k1177-game-logo.webp',
+          title: 'K1177 Hero Image',
+          caption: 'K1177 gaming platform showcase',
         },
       ],
     },
     {
-      url: '/download-sk777',
+      url: '/download-k1177',
       lastMod: now,
       changeFreq: 'weekly',
       priority: 0.9,
       images: [
         {
-          loc: '/SK777-Game-Icon.png',
-          title: 'Download SK777',
-          caption: 'Download SK777 APK for Android',
+          loc: '/k1177-game-logo.webp',
+          title: 'Download K1177',
+          caption: 'Download K1177 APK for Android',
         },
       ],
     },
-    { url: '/deposit-money-in-sk777', lastMod: now, changeFreq: 'weekly', priority: 0.9 },
-    { url: '/withdraw-money-from-sk777', lastMod: now, changeFreq: 'weekly', priority: 0.9 },
+    { url: '/deposit-money-in-k1177', lastMod: now, changeFreq: 'weekly', priority: 0.9 },
+    { url: '/withdraw-money-from-k1177', lastMod: now, changeFreq: 'weekly', priority: 0.9 },
     {
-      url: '/sk777-for-pc',
+      url: '/k1177-for-pc',
       lastMod: now,
       changeFreq: 'weekly',
       priority: 0.9,
       images: [
         {
-          loc: '/SK777-Game-Icon.png',
-          title: 'SK777 for PC',
-          caption: 'Play SK777 on PC using Android Emulator',
+          loc: '/k1177-game-logo.webp',
+          title: 'K1177 for PC',
+          caption: 'Play K1177 on PC using Android Emulator',
         },
       ],
     },
@@ -80,9 +87,9 @@ export async function GET() {
       priority: 0.7,
       images: [
         {
-          loc: '/SK777-Game-Icon.png',
-          title: 'About SK777',
-          caption: 'Learn about SK777 gaming platform',
+          loc: '/k1177-game-logo.webp',
+          title: 'About K1177',
+          caption: 'Learn about K1177 gaming platform',
         },
       ],
     },
@@ -93,9 +100,9 @@ export async function GET() {
       priority: 0.8,
       images: [
         {
-          loc: '/SK777-Game-Icon.png',
-          title: 'SK777 Blog',
-          caption: 'Guides and tutorials for SK777',
+          loc: '/k1177-game-logo.webp',
+          title: 'K1177 Blog',
+          caption: 'Guides and tutorials for K1177',
         },
       ],
     },

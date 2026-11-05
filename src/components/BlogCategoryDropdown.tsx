@@ -7,28 +7,35 @@ const BlogCategoryDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
   
   const categories = [
-    { name: 'Account & Login', href: '/blog/create-sk777-account-and-login' },
-    { name: 'Download & Install', href: '/blog/how-to-download-install-sk777-apk-pakistan' },
-    { name: 'Deposit Guide', href: '/blog/sk777-deposit-jazzcash-easypaisa-guide' },
-    { name: 'Withdraw Guide', href: '/blog/sk777-withdraw-money-guide' },
-    { name: 'App Review', href: '/blog/sk777-app-review-2026' },
-    { name: 'Safety', href: '/blog/is-sk777-safe-legal-pakistan' },
-    { name: 'Beginner Guide', href: '/blog/how-to-use-sk777-app-pakistan-guide' },
-    { name: 'Bonus & Rewards', href: '/blog/sk777-bonus-daily-rewards-guide' },
-    { name: 'Play on PC', href: '/blog/how-to-play-sk777-on-pc' },
-    { name: 'Customer Service', href: '/blog/sk777-customer-service-account-help' },
-    { name: 'Games List', href: '/blog/sk777-games-list-pakistan' },
-    { name: 'Invite Friends', href: '/blog/sk777-invite-friends-referral-guide' },
-    { name: 'Minimum Deposit', href: '/blog/sk777-minimum-deposit-pakistan' },
-    { name: 'Withdrawal PIN', href: '/blog/sk777-withdrawal-pin-setup' },
-    { name: 'App Not Working', href: '/blog/sk777-app-not-working-fix' },
+    { name: 'Account & Login', href: '/blog/create-k1177-account-and-login' },
+    { name: 'Download & Install', href: '/blog/how-to-download-install-k1177-apk-pakistan' },
+    { name: 'Deposit Guide', href: '/blog/k1177-deposit-jazzcash-easypaisa-guide' },
+    { name: 'Withdraw Guide', href: '/blog/k1177-withdraw-money-guide' },
+    { name: 'App Review', href: '/blog/k1177-app-review-2026' },
+    { name: 'Safety', href: '/blog/is-k1177-safe-legal-pakistan' },
+    { name: 'Beginner Guide', href: '/blog/how-to-use-k1177-app-pakistan-guide' },
+    { name: 'Bonus & Rewards', href: '/blog/k1177-bonus-daily-rewards-guide' },
+    { name: 'Play on PC', href: '/blog/how-to-play-k1177-on-pc' },
+    { name: 'Customer Service', href: '/blog/k1177-customer-service-account-help' },
+    { name: 'Games List', href: '/blog/k1177-games-list-pakistan' },
+    { name: 'Invite Friends', href: '/blog/k1177-invite-friends-referral-guide' },
+    { name: 'Minimum Deposit', href: '/blog/k1177-minimum-deposit-pakistan' },
+    { name: 'Withdrawal PIN', href: '/blog/k1177-withdrawal-pin-setup' },
+    { name: 'App Not Working', href: '/blog/k1177-app-not-working-fix' },
+    { name: 'Fake APK & Scams', href: '/blog/k1177-fake-apk-scam-warnings' },
+    { name: 'OTP & Login Fix', href: '/blog/k1177-otp-not-received-login-fix' },
+    { name: 'VIP & Member Day', href: '/blog/k1177-vip-member-day-guide' },
+    { name: 'Responsible Gaming', href: '/blog/k1177-responsible-gaming-pakistan' },
+    { name: 'Update APK', href: '/blog/k1177-update-apk-latest-version' },
+    { name: 'Bind Wallet', href: '/blog/k1177-bind-jazzcash-easypaisa-account' },
+    { name: 'Treasure Chest', href: '/blog/k1177-treasure-chest-jackpot-guide' },
   ];
 
   return (
     <div className="relative mb-8">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center justify-between w-full md:w-64 px-4 py-2 bg-secondary text-white rounded-md"
+        className="flex items-center justify-between w-full md:w-64 px-4 py-2 bg-secondary text-ink rounded-md"
       >
         <span>Select Category</span>
         <svg
@@ -49,7 +56,7 @@ const BlogCategoryDropdown = () => {
               <li key={category.name}>
                 <Link 
                   href={category.href}
-                  className="block px-4 py-2 text-sm text-white hover:bg-gray-700"
+                  className="block px-4 py-2 text-sm text-ink hover:bg-accent/10"
                   onClick={() => setIsOpen(false)}
                 >
                   {category.name}

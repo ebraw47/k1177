@@ -1,19 +1,19 @@
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-  const baseUrl = 'https://sk777app.com.pk';
+  const baseUrl = 'https://k1177apk.com.pk';
 
-  const robotsTxt = `# robots.txt for sk777app.com.pk
+  const robotsTxt = `# robots.txt for k1177apk.com.pk
 
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /admin/
 
-Allow: /download-sk777
-Allow: /deposit-money-in-sk777
-Allow: /withdraw-money-from-sk777
-Allow: /sk777-for-pc
+Allow: /download-k1177
+Allow: /deposit-money-in-k1177
+Allow: /withdraw-money-from-k1177
+Allow: /k1177-for-pc
 Allow: /about-us
 Allow: /blog
 Allow: /contact-us

@@ -35,8 +35,9 @@ export default function ScrollToTop() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 p-3 bg-gradient-to-r from-yellow-500 to-yellow-600 text-gray-900 rounded-full shadow-lg hover:shadow-2xl hover:scale-110 transition-all duration-300 group"
+          className="fixed bottom-8 right-8 z-50 p-3 rounded-full shadow-lg hover:shadow-2xl hover:scale-110 transition-all duration-300 group bg-accent text-primary border border-accent/80"
           aria-label="Scroll to top"
+          style={{ backgroundColor: '#f5c518', color: '#062816' }}
         >
           <svg
             className="w-6 h-6 transform group-hover:-translate-y-1 transition-transform"
@@ -48,7 +49,7 @@ export default function ScrollToTop() {
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth={2}
+              strokeWidth={2.5}
               d="M5 10l7-7m0 0l7 7m-7-7v18"
             />
           </svg>

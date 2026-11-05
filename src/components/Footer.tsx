@@ -1,17 +1,19 @@
 import Link from 'next/link';
 import DownloadButton from '@/components/DownloadButton';
-import { FACEBOOK_URL, SITE_DOMAIN } from '@/lib/constants';
+import WalletLinks from '@/components/WalletLinks';
+import { EASYPAISA_URL, FACEBOOK_URL, JAZZCASH_URL, SITE_DOMAIN } from '@/lib/constants';
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-white pt-8 pb-2 px-4 md:px-8 border-t border-cyan/20 relative z-20">
+    <footer className="bg-primary text-ink pt-8 pb-2 px-4 md:px-8 border-t border-cyan/20 relative z-20">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold text-accent mb-4">SK777</h3>
-            <p className="text-sm text-gray-300 mb-4">
-              SK777 is Pakistan&apos;s real-money gaming platform for earning games on Android.
-              Deposit and withdraw with JazzCash &amp; EasyPaisa when listed. Play responsibly (18+).
+            <h3 className="text-xl font-bold text-accent mb-4">K1177</h3>
+            <p className="text-sm text-muted mb-4">
+              K1177 is Pakistan&apos;s real-money gaming platform for earning games on Android.
+              Deposit and withdraw with <WalletLinks className="text-accent hover:underline" /> when
+              listed. Play responsibly (18+).
             </p>
             {FACEBOOK_URL && FACEBOOK_URL !== 'https://www.facebook.com/' && (
               <div className="flex space-x-4">
@@ -19,7 +21,7 @@ export default function Footer() {
                   href={FACEBOOK_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="SK777 on Facebook"
+                  aria-label="K1177 on Facebook"
                 >
                   <svg
                     className="w-5 h-5 transition-opacity hover:opacity-90"
@@ -38,32 +40,32 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4 text-accent">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/" className="text-gray-300 hover:text-accent transition-colors">
+                <Link href="/" className="text-muted hover:text-accent transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/download-sk777" className="text-gray-300 hover:text-accent transition-colors">
+                <Link href="/download-k1177" className="text-muted hover:text-accent transition-colors">
                   Download
                 </Link>
               </li>
               <li>
-                <Link href="/sk777-for-pc" className="text-gray-300 hover:text-accent transition-colors">
+                <Link href="/k1177-for-pc" className="text-muted hover:text-accent transition-colors">
                   PC Version
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-gray-300 hover:text-accent transition-colors">
+                <Link href="/blog" className="text-muted hover:text-accent transition-colors">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/about-us" className="text-gray-300 hover:text-accent transition-colors">
+                <Link href="/about-us" className="text-muted hover:text-accent transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/contact-us" className="text-gray-300 hover:text-accent transition-colors">
+                <Link href="/contact-us" className="text-muted hover:text-accent transition-colors">
                   Contact Us
                 </Link>
               </li>
@@ -74,32 +76,52 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4 text-accent">Resources</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/deposit-money-in-sk777" className="text-gray-300 hover:text-accent transition-colors">
+                <Link href="/deposit-money-in-k1177" className="text-muted hover:text-accent transition-colors">
                   Deposit Guide
                 </Link>
               </li>
               <li>
-                <Link href="/withdraw-money-from-sk777" className="text-gray-300 hover:text-accent transition-colors">
+                <a
+                  href={JAZZCASH_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted hover:text-accent transition-colors"
+                >
+                  JazzCash
+                </a>
+              </li>
+              <li>
+                <a
+                  href={EASYPAISA_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted hover:text-accent transition-colors"
+                >
+                  EasyPaisa
+                </a>
+              </li>
+              <li>
+                <Link href="/withdraw-money-from-k1177" className="text-muted hover:text-accent transition-colors">
                   Withdraw Guide
                 </Link>
               </li>
               <li>
-                <Link href="/blog/create-sk777-account-and-login" className="text-gray-300 hover:text-accent transition-colors">
+                <Link href="/blog/create-k1177-account-and-login" className="text-muted hover:text-accent transition-colors">
                   Account & Login
                 </Link>
               </li>
               <li>
-                <Link href="/blog/is-sk777-safe-legal-pakistan" className="text-gray-300 hover:text-accent transition-colors">
+                <Link href="/blog/is-k1177-safe-legal-pakistan" className="text-muted hover:text-accent transition-colors">
                   Safety Guide
                 </Link>
               </li>
               <li>
-                <Link href="/privacy" className="text-gray-300 hover:text-accent transition-colors">
+                <Link href="/privacy" className="text-muted hover:text-accent transition-colors">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/disclaimer" className="text-gray-300 hover:text-accent transition-colors">
+                <Link href="/disclaimer" className="text-muted hover:text-accent transition-colors">
                   Disclaimer
                 </Link>
               </li>
@@ -108,14 +130,14 @@ export default function Footer() {
 
           <div>
             <h3 className="text-lg font-semibold mb-4 text-accent">Download App</h3>
-            <p className="text-sm text-gray-300 mb-4">
-              Download SK777 to enjoy earning games, daily rewards, and local wallets on Android.
+            <p className="text-sm text-muted mb-4">
+              Download K1177 to enjoy earning games, daily rewards, and local wallets on Android.
             </p>
             <div className="flex flex-col gap-3 items-start">
-              <DownloadButton size="sm" label="DOWNLOAD SK777" />
+              <DownloadButton size="sm" label="DOWNLOAD K1177" />
               <Link
-                href="/download-sk777"
-                className="inline-flex w-fit items-center justify-center px-4 py-2 rounded-full border border-gray-600 text-sm text-white font-semibold hover:border-accent hover:text-accent transition-colors"
+                href="/download-k1177"
+                className="inline-flex w-fit items-center justify-center px-4 py-2 rounded-full border border-accent/25 text-sm text-ink font-semibold hover:border-accent hover:text-accent transition-colors"
               >
                 Installation Guide
               </Link>
@@ -123,9 +145,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-4 pb-3 text-center text-sm text-gray-400">
+        <div className="border-t border-accent/15 mt-8 pt-4 pb-3 text-center text-sm text-muted/80">
           <p className="mb-0">
-            © 2026 SK777. All rights reserved. |{' '}
+            © 2026 K1177. All rights reserved. |{' '}
             <Link href="/" className="hover:text-accent">
               {SITE_DOMAIN}
             </Link>

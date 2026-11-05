@@ -3,17 +3,17 @@ import { Metadata } from 'next';
 import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'SK777 Blog - Guides, Tips, Reviews & Tutorials 2026',
+  title: 'K1177 Blog - Guides, Tips, Reviews & Tutorials 2026',
   description:
-    'SK777 blog for Pakistan: app review, APK install, JazzCash & EasyPaisa deposits, withdrawals, safety, and responsible 18+ gaming guides.',
+    'K1177 blog for Pakistan: app review, APK install, JazzCash & EasyPaisa deposits, withdrawals, safety, and responsible 18+ gaming guides.',
   keywords: [
-    'SK777 blog',
-    'SK777 guide',
-    'SK777 review',
-    'SK777 APK',
-    'SK777 deposit',
-    'SK777 withdraw',
-    'SK777 Pakistan 2026',
+    'K1177 blog',
+    'K1177 guide',
+    'K1177 review',
+    'K1177 APK',
+    'K1177 deposit',
+    'K1177 withdraw',
+    'K1177 Pakistan 2026',
   ],
   robots: {
     index: true,
@@ -29,129 +29,178 @@ export const metadata: Metadata = {
     canonical: `${SITE_URL}/blog`,
   },
   openGraph: {
-    title: 'SK777 Blog - Guides, Tips & Reviews 2026',
-    description: 'Official SK777 guides for download, payments, and safe play in Pakistan.',
+    title: 'K1177 Blog - Guides, Tips & Reviews 2026',
+    description: 'Official K1177 guides for download, payments, and safe play in Pakistan.',
     url: `${SITE_URL}/blog`,
-    siteName: 'SK777',
+    siteName: 'K1177',
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: `${SITE_URL}/SK777-Game-Icon.png`,
+        url: `${SITE_URL}/k1177-game-logo.webp`,
         width: 1200,
         height: 630,
-        alt: 'SK777 Blog',
+        alt: 'K1177 Blog',
       },
     ],
   },
 };
 
-/** SERP-matched SK777 topics only */
+/** SERP-matched K1177 topics only */
 const posts = [
   {
-    slug: 'sk777-app-review-2026',
-    title: 'SK777 App Review 2026',
+    slug: 'k1177-app-review-2026',
+    title: 'K1177 App Review 2026',
     description:
       'Honest review: earning games, JazzCash & EasyPaisa, pros, cons, and payout notes for Pakistan.',
     readTime: '12 min read',
     featured: true,
   },
   {
-    slug: 'how-to-download-install-sk777-apk-pakistan',
-    title: 'How to Download & Install SK777 APK in Pakistan',
+    slug: 'how-to-download-install-k1177-apk-pakistan',
+    title: 'How to Download & Install K1177 APK in Pakistan',
     description: 'Step-by-step Android install: official APK, unknown sources, and troubleshooting.',
     readTime: '10 min read',
     featured: false,
   },
   {
-    slug: 'create-sk777-account-and-login',
-    title: 'How to Create a SK777 Account and Login',
+    slug: 'create-k1177-account-and-login',
+    title: 'How to Create a K1177 Account and Login',
     description: 'Register, set credentials, and log in safely on your Pakistani number.',
     readTime: '6 min read',
     featured: false,
   },
   {
-    slug: 'sk777-deposit-jazzcash-easypaisa-guide',
-    title: 'SK777 Deposit Guide: JazzCash & EasyPaisa',
+    slug: 'k1177-deposit-jazzcash-easypaisa-guide',
+    title: 'K1177 Deposit Guide: JazzCash & EasyPaisa',
     description: 'Add balance with local wallets, fix delayed credits, and avoid common mistakes.',
     readTime: '8 min read',
     featured: false,
   },
   {
-    slug: 'sk777-withdraw-money-guide',
-    title: 'SK777 Withdraw Money Guide',
+    slug: 'k1177-withdraw-money-guide',
+    title: 'K1177 Withdraw Money Guide',
     description: 'Cash out with withdrawal PIN to JazzCash or EasyPaisa — and fix failed requests.',
     readTime: '9 min read',
     featured: false,
   },
   {
-    slug: 'is-sk777-safe-legal-pakistan',
-    title: 'Is SK777 Safe and Legal in Pakistan?',
+    slug: 'is-k1177-safe-legal-pakistan',
+    title: 'Is K1177 Safe and Legal in Pakistan?',
     description: 'Official download tips, scam warnings, legal context, and responsible play.',
     readTime: '12 min read',
     featured: false,
   },
   {
-    slug: 'how-to-use-sk777-app-pakistan-guide',
-    title: 'How to Use SK777 App in Pakistan: Beginner Guide',
+    slug: 'how-to-use-k1177-app-pakistan-guide',
+    title: 'How to Use K1177 App in Pakistan: Beginner Guide',
     description: 'End-to-end: download, register, deposit, play, withdraw, and stay in control.',
     readTime: '14 min read',
     featured: false,
   },
   {
-    slug: 'sk777-bonus-daily-rewards-guide',
-    title: 'SK777 Bonus & Daily Rewards Guide 2026',
+    slug: 'k1177-bonus-daily-rewards-guide',
+    title: 'K1177 Bonus & Daily Rewards Guide 2026',
     description: 'Welcome offers, daily rewards, wagering tips, and how to avoid fake VIP promos.',
     readTime: '8 min read',
     featured: false,
   },
   {
-    slug: 'how-to-play-sk777-on-pc',
-    title: 'How to Play SK777 on PC (BlueStacks & Emulators)',
+    slug: 'how-to-play-k1177-on-pc',
+    title: 'How to Play K1177 on PC (BlueStacks & Emulators)',
     description: 'Run the Android APK on Windows: requirements, install steps, and common PC errors.',
     readTime: '9 min read',
     featured: false,
   },
   {
-    slug: 'sk777-customer-service-account-help',
-    title: 'SK777 Customer Service & Account Help',
+    slug: 'k1177-customer-service-account-help',
+    title: 'K1177 Customer Service & Account Help',
     description: 'In-app support, login resets, deposit proofs, and how to spot fake agents.',
     readTime: '7 min read',
     featured: false,
   },
   {
-    slug: 'sk777-games-list-pakistan',
-    title: 'SK777 Games List Pakistan 2026',
-    description: 'What you can play: earning rounds, slots, prediction-style games, and lobby tips.',
+    slug: 'k1177-games-list-pakistan',
+    title: 'K1177 Games List Pakistan 2026',
+    description: 'Slots, cards, fishing, live sports picks, jackpots, and how to browse the K1177 lobby in Pakistan.',
     readTime: '7 min read',
     featured: false,
   },
   {
-    slug: 'sk777-invite-friends-referral-guide',
-    title: 'SK777 Invite Friends & Referral Guide',
+    slug: 'k1177-invite-friends-referral-guide',
+    title: 'K1177 Invite Friends & Referral Guide',
     description: 'Find your invite code, share safely, understand rewards, and avoid referral scams.',
     readTime: '6 min read',
     featured: false,
   },
   {
-    slug: 'sk777-minimum-deposit-pakistan',
-    title: 'SK777 Minimum Deposit Pakistan 2026',
+    slug: 'k1177-minimum-deposit-pakistan',
+    title: 'K1177 Minimum Deposit Pakistan 2026',
     description: 'Check the live min PKR amount, start small with JazzCash/EasyPaisa, and avoid deposit mistakes.',
     readTime: '6 min read',
     featured: false,
   },
   {
-    slug: 'sk777-withdrawal-pin-setup',
-    title: 'How to Set SK777 Withdrawal PIN',
+    slug: 'k1177-withdrawal-pin-setup',
+    title: 'How to Set K1177 Withdrawal PIN',
     description: 'Create your cash-out PIN, bind a wallet, and recover safely if you forget it.',
     readTime: '6 min read',
     featured: false,
   },
   {
-    slug: 'sk777-app-not-working-fix',
-    title: 'SK777 App Not Working? Common Fixes',
+    slug: 'k1177-app-not-working-fix',
+    title: 'K1177 App Not Working? Common Fixes',
     description: 'Crashes, login errors, and delayed deposits — update APK, network checks, and support tips.',
     readTime: '8 min read',
+    featured: false,
+  },
+  {
+    slug: 'k1177-fake-apk-scam-warnings',
+    title: 'K1177 Fake APK & Scam Warnings',
+    description: 'Spot fake APKs, Telegram agents, and phishing links before you deposit.',
+    readTime: '7 min read',
+    featured: false,
+  },
+  {
+    slug: 'k1177-otp-not-received-login-fix',
+    title: 'K1177 OTP Not Received & Login Fix',
+    description: 'SMS code delays, password errors, and stuck login screens — quick Pakistan fixes.',
+    readTime: '6 min read',
+    featured: false,
+  },
+  {
+    slug: 'k1177-vip-member-day-guide',
+    title: 'K1177 VIP & Member Day Guide',
+    description: 'Claim Member Day / VIP offers safely and read wagering before you withdraw.',
+    readTime: '6 min read',
+    featured: false,
+  },
+  {
+    slug: 'k1177-responsible-gaming-pakistan',
+    title: 'K1177 Responsible Gaming (18+)',
+    description: 'Set limits, avoid chasing losses, and keep real-money play adult-only.',
+    readTime: '5 min read',
+    featured: false,
+  },
+  {
+    slug: 'k1177-update-apk-latest-version',
+    title: 'How to Update K1177 APK (Latest Version)',
+    description: 'Install V1.6 over your old build, fix blocked updates, and verify after install.',
+    readTime: '5 min read',
+    featured: false,
+  },
+  {
+    slug: 'k1177-bind-jazzcash-easypaisa-account',
+    title: 'Bind JazzCash & EasyPaisa to K1177',
+    description: 'Link your own wallet for deposits and withdrawals — name match and PIN tips.',
+    readTime: '6 min read',
+    featured: false,
+  },
+  {
+    slug: 'k1177-treasure-chest-jackpot-guide',
+    title: 'K1177 Treasure Chest & Jackpot Guide',
+    description: 'How chest rewards and jackpot-style events work — claim tips and risk notes.',
+    readTime: '6 min read',
     featured: false,
   },
 ] as const;
@@ -159,9 +208,9 @@ const posts = [
 export default function Blog() {
   return (
     <div className="container mx-auto px-4 py-12">
-      <h1 className="text-3xl md:text-4xl font-bold mb-8 text-accent">SK777 Blog</h1>
-      <p className="text-gray-300 mb-8 text-lg">
-        Guides, payment help, and responsible gaming tips for SK777 players in Pakistan
+      <h1 className="text-3xl md:text-4xl font-bold mb-8 text-accent">K1177 Blog</h1>
+      <p className="text-muted mb-8 text-lg">
+        Guides, payment help, and responsible gaming tips for K1177 players in Pakistan
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -169,7 +218,7 @@ export default function Blog() {
           <div
             key={post.slug}
             className={`bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 ${
-              post.featured ? 'border-accent' : 'border-gray-700 hover:border-accent'
+              post.featured ? 'border-accent' : 'border-accent/20 hover:border-accent'
             }`}
           >
             {post.featured && (
@@ -177,10 +226,10 @@ export default function Blog() {
                 FEATURED
               </div>
             )}
-            <h2 className="text-2xl font-bold mb-4 text-white">{post.title}</h2>
-            <p className="text-gray-300 mb-4">{post.description}</p>
-            <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
-              <span>October 2026</span>
+            <h2 className="text-2xl font-bold mb-4 text-ink">{post.title}</h2>
+            <p className="text-muted mb-4">{post.description}</p>
+            <div className="flex items-center gap-2 text-sm text-muted/80 mb-4">
+              <span>Nov 2026</span>
               <span>•</span>
               <span>{post.readTime}</span>
             </div>

@@ -17,7 +17,7 @@ export default function FaqList({ faqs }: { faqs: FaqItem[] }) {
         return (
           <div
             key={item.q}
-            className="sk777-faq-card bg-secondary rounded-xl border border-gray-800 p-5"
+            className="k1177-faq-card bg-secondary rounded-xl border border-accent/15 p-5"
             onMouseEnter={() => setOpenIndex(index)}
             onMouseLeave={() => setOpenIndex(null)}
             onFocus={() => setOpenIndex(index)}
@@ -25,7 +25,7 @@ export default function FaqList({ faqs }: { faqs: FaqItem[] }) {
           >
             <button
               type="button"
-              className="w-full font-semibold text-white text-left flex justify-between items-center gap-3"
+              className="w-full font-semibold text-ink text-left flex justify-between items-center gap-3"
               aria-expanded={isOpen}
               onClick={() => setOpenIndex(isOpen ? null : index)}
             >
@@ -45,7 +45,7 @@ export default function FaqList({ faqs }: { faqs: FaqItem[] }) {
               }`}
             >
               <div className="overflow-hidden">
-                <p className="text-gray-300 mt-3 leading-relaxed">{item.a}</p>
+                <p className="text-muted mt-3 leading-relaxed">{item.a}</p>
               </div>
             </div>
           </div>

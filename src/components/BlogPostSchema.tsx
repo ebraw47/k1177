@@ -1,4 +1,4 @@
-const BASE = "https://sk777app.com.pk";
+const BASE = "https://k1177apk.com.pk";
 
 function safeJsonLd(obj: object): string {
   return JSON.stringify(obj).replace(/</g, "\\u003c");
@@ -20,7 +20,7 @@ export default function BlogPostSchema({
   slug,
   datePublished,
   dateModified,
-  image = `${BASE}/SK777-Game-Icon.png`,
+  image = `${BASE}/k1177-game-logo.webp`,
   breadcrumbOnly = false,
 }: BlogPostSchemaProps) {
   const url = `${BASE}/blog/${slug}`;
@@ -39,11 +39,11 @@ export default function BlogPostSchema({
     headline: title,
     description,
     image,
-    author: { "@type": "Organization", name: "SK777", url: BASE },
+    author: { "@type": "Organization", name: "K1177", url: BASE },
     publisher: {
       "@type": "Organization",
-      name: "SK777",
-      logo: { "@type": "ImageObject", url: `${BASE}/SK777-Game-Icon.png` },
+      name: "K1177",
+      logo: { "@type": "ImageObject", url: `${BASE}/k1177-game-logo.webp` },
     },
     datePublished,
     dateModified: dateModified || datePublished,

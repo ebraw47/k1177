@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Chakra_Petch, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import Header from "@/components/Header";
@@ -15,47 +15,38 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-/** Closest match to in-game SK777 wordmark (bold italic geometric) */
-const chakraPetch = Chakra_Petch({
-  subsets: ["latin"],
-  weight: ["600", "700"],
-  style: ["normal", "italic"],
-  display: "swap",
-  variable: "--font-logo",
-});
-
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: "#0a2744",
+  themeColor: "#03150c",
   viewportFit: "cover",
   interactiveWidget: "resizes-visual",
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://sk777app.com.pk'),
+  metadataBase: new URL('https://k1177apk.com.pk'),
   title: {
-    default: "SK777 Pakistan Free Download Official APK 2026",
-    template: "%s | SK777"
+    default: "K1177 Game Free Download Online Money App In Pakistan V1.6",
+    template: "%s | K1177"
   },
-  description: "SK777 2026 - Download SK777 APK for Android. Play & earn real cash with JazzCash & EasyPaisa. Official Pakistan site sk777app.com.pk.",
+  description: "Download K1177 Game APK V1.6 for Pakistan. Casino earning app with JazzCash & EasyPaisa, slots, cards, bonuses. Official site k1177apk.com.pk.",
   keywords: [
-    "SK777",
-    "SK777 APK",
-    "SK777 download",
-    "SK777 Pakistan",
-    "SK777 game",
-    "SK777 app",
-    "SK777 earning game",
-    "SK777 JazzCash",
-    "SK777 2026",
-    "sk777app.com.pk"
+    "K1177",
+    "K1177 Game",
+    "K1177 APK",
+    "K1177 download",
+    "K1177 Pakistan",
+    "K1177 Game Free Download",
+    "K1177 online money app",
+    "K1177 JazzCash",
+    "K1177 V1.6",
+    "k1177apk.com.pk"
   ],
-  authors: [{ name: "SK777 Team" }],
-  creator: "SK777",
-  publisher: "SK777",
+  authors: [{ name: "K1177 Team" }],
+  creator: "K1177",
+  publisher: "K1177",
   robots: {
     index: true,
     follow: true,
@@ -69,59 +60,59 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon-32.png', type: 'image/png', sizes: '32x32' },
+      { url: '/favicon.ico', sizes: 'any' },
       { url: '/favicon-16.png', type: 'image/png', sizes: '16x16' },
-      { url: '/favicon.png', type: 'image/png', sizes: '32x32' },
-      { url: '/SK777-Game-Icon.png', type: 'image/png', sizes: '512x512' }
+      { url: '/favicon-32.png', type: 'image/png', sizes: '32x32' },
+      { url: '/favicon-48.png', type: 'image/png', sizes: '48x48' },
+      { url: '/favicon-192.png', type: 'image/png', sizes: '192x192' },
+      { url: '/favicon.png', type: 'image/png', sizes: '512x512' },
     ],
-    apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180' }
-    ],
-    shortcut: '/favicon-32.png'
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
+    shortcut: '/favicon.ico',
   },
   verification: {
     google: "8a7c21f6e90a89ef",
   },
   alternates: {
-    canonical: "https://sk777app.com.pk",
+    canonical: "https://k1177apk.com.pk",
   },
   openGraph: {
-    title: "SK777 Pakistan Free Download Official APK 2026",
-    description: "SK777 2026 - Download SK777 APK. Play & earn real cash with JazzCash & EasyPaisa withdrawals.",
-    url: "https://sk777app.com.pk",
-    siteName: "SK777",
+    title: "K1177 Game Free Download Online Money App In Pakistan V1.6",
+    description: "Download K1177 APK V1.6. Play & earn with JazzCash & EasyPaisa withdrawals.",
+    url: "https://k1177apk.com.pk",
+    siteName: "K1177",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://sk777app.com.pk/feature/og-image.webp",
+        url: "https://k1177apk.com.pk/feature/og-image.webp",
         width: 1200,
         height: 630,
-        alt: "SK777 - Real-Money Gaming App",
+        alt: "K1177 Game - Online Money App Pakistan",
       },
       {
-        url: "https://sk777app.com.pk/feature/og-image-square.webp",
+        url: "https://k1177apk.com.pk/feature/og-image-square.webp",
         width: 800,
         height: 800,
-        alt: "SK777 - Real-Money Gaming App",
+        alt: "K1177 Game - Online Money App Pakistan",
       }
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SK777 Pakistan Free Download Official APK 2026",
-    description: "SK777 2026 - Download SK777 APK. Play & earn real cash with JazzCash & EasyPaisa.",
-    creator: "@sk777app",
+    title: "K1177 Game Free Download Online Money App In Pakistan V1.6",
+    description: "Download K1177 APK V1.6. Play & earn with JazzCash & EasyPaisa.",
+    creator: "@k1177apk",
     images: [
       {
-        url: "https://sk777app.com.pk/feature/twitter-card.webp",
+        url: "https://k1177apk.com.pk/feature/twitter-card.webp",
         width: 1200,
         height: 600,
-        alt: "SK777 - Real-Money Gaming App",
+        alt: "K1177 Game - Online Money App Pakistan",
       }
     ],
   },
-  applicationName: "SK777",
+  applicationName: "K1177",
   category: "Gaming",
   classification: "Real-Money Gaming Platform",
 };
@@ -132,17 +123,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.variable} ${chakraPetch.variable}`} suppressHydrationWarning>
+    <html lang="en" className={poppins.variable} suppressHydrationWarning>
       <head>
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <meta name="geo.region" content="PK" />
         <meta name="geo.placename" content="Pakistan" />
-        <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16" />
-        <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
-        <link rel="icon" href="/SK777-Game-Icon.png" type="image/png" sizes="512x512" />
-        <link rel="shortcut icon" href="/favicon-32.png" />
+        <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
@@ -175,17 +172,14 @@ export default function RootLayout({
         )}
       </head>
       <body
-        className={`${poppins.className} antialiased bg-primary text-white min-h-screen flex flex-col`}
+        className={`${poppins.className} antialiased text-ink min-h-screen flex flex-col`}
         style={{
-          backgroundImage:
-            "radial-gradient(ellipse at 70% 0%, rgba(62, 181, 232, 0.16) 0%, transparent 45%), radial-gradient(ellipse at 10% 80%, rgba(13, 51, 88, 0.95) 0%, transparent 55%)",
-          backgroundAttachment: "fixed",
+          backgroundColor: "#041c10",
           minHeight: "100vh",
-          backgroundColor: "#0a2744",
         }}
         suppressHydrationWarning
       >
-        <div className="stars-bg fixed inset-0 z-0" aria-hidden="true"></div>
+        <div className="stars-bg fixed inset-0 z-0" aria-hidden="true" />
         <Header />
         <main className="flex-grow relative z-10">
         {children}
@@ -202,21 +196,21 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "@id": "https://sk777app.com.pk/#organization",
-              "name": "SK777",
-              "url": "https://sk777app.com.pk",
+              "@id": "https://k1177apk.com.pk/#organization",
+              "name": "K1177",
+              "url": "https://k1177apk.com.pk",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://sk777app.com.pk/SK777-Game-Icon.png",
+                "url": "https://k1177apk.com.pk/k1177-game-logo.webp",
                 "width": 512,
                 "height": 512
               },
-              "description": "SK777 is Pakistan's real-money gaming platform. Download APK, JazzCash and EasyPaisa deposits and withdrawals.",
+              "description": "K1177 is Pakistan's real-money gaming platform. Download APK, JazzCash and EasyPaisa deposits and withdrawals.",
               "areaServed": { "@type": "Country", "name": "Pakistan", "alternateName": "PK" },
               "contactPoint": {
                 "@type": "ContactPoint",
                 "contactType": "Customer Support",
-                "email": "support@sk777app.com.pk",
+                "email": "support@k1177apk.com.pk",
                 "areaServed": "PK",
                 "availableLanguage": ["English", "Urdu"]
               }
