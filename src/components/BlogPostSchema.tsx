@@ -20,7 +20,7 @@ export default function BlogPostSchema({
   slug,
   datePublished,
   dateModified,
-  image = `${BASE}/k1177-game-logo.webp`,
+  image = `${BASE}/k1177-game-logo-site.webp`,
   breadcrumbOnly = false,
 }: BlogPostSchemaProps) {
   const url = `${BASE}/blog/${slug}`;
@@ -43,7 +43,7 @@ export default function BlogPostSchema({
     publisher: {
       "@type": "Organization",
       name: "K1177",
-      logo: { "@type": "ImageObject", url: `${BASE}/k1177-game-logo.webp` },
+      logo: { "@type": "ImageObject", url: `${BASE}/k1177-game-logo-site.webp` },
     },
     datePublished,
     dateModified: dateModified || datePublished,

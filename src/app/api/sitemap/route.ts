@@ -3,6 +3,10 @@ import { NextResponse } from 'next/server';
 const baseUrl = 'https://k1177apk.com.pk';
 
 const blogSlugs = [
+  'what-is-k1177-game-pakistan',
+  'k1177-features-guide-pakistan',
+  'k1177-pros-and-cons-pakistan',
+  'k1177-faq-pakistan',
   'k1177-app-review-2026',
   'how-to-download-install-k1177-apk-pakistan',
   'create-k1177-account-and-login',
@@ -46,7 +50,7 @@ export async function GET() {
       priority: 1.0,
       images: [
         {
-          loc: '/k1177-game-logo.webp',
+          loc: '/k1177-game-logo-site.webp',
           title: 'K1177 Hero Image',
           caption: 'K1177 gaming platform showcase',
         },
@@ -59,7 +63,7 @@ export async function GET() {
       priority: 0.9,
       images: [
         {
-          loc: '/k1177-game-logo.webp',
+          loc: '/k1177-game-logo-site.webp',
           title: 'Download K1177',
           caption: 'Download K1177 APK for Android',
         },
@@ -74,7 +78,7 @@ export async function GET() {
       priority: 0.9,
       images: [
         {
-          loc: '/k1177-game-logo.webp',
+          loc: '/k1177-game-logo-site.webp',
           title: 'K1177 for PC',
           caption: 'Play K1177 on PC using Android Emulator',
         },
@@ -87,7 +91,7 @@ export async function GET() {
       priority: 0.7,
       images: [
         {
-          loc: '/k1177-game-logo.webp',
+          loc: '/k1177-game-logo-site.webp',
           title: 'About K1177',
           caption: 'Learn about K1177 gaming platform',
         },
@@ -100,7 +104,7 @@ export async function GET() {
       priority: 0.8,
       images: [
         {
-          loc: '/k1177-game-logo.webp',
+          loc: '/k1177-game-logo-site.webp',
           title: 'K1177 Blog',
           caption: 'Guides and tutorials for K1177',
         },

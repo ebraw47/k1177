@@ -318,11 +318,28 @@ export default function HomePage() {
                 <p className="k1177-hero-tagline mb-4 sm:mb-5">
                   Free Download Online Money App In Pakistan · V1.6
                 </p>
-                <p className="k1177-hero-copy text-ink/90 mb-6 sm:mb-8 max-w-xl mx-auto lg:mx-0">
+                <p className="k1177-hero-copy text-ink/90 mb-4 sm:mb-5 max-w-xl mx-auto lg:mx-0">
                   The K1177 Game is a casino gaming platform popular in Pakistan for secure play and
                   real earning opportunities — slots, cards, live sports-style games,{' '}
                   <WalletLinks />, and an interactive Urdu/English lobby. Get the official APK only
                   from the button below.
+                </p>
+                <p className="text-sm text-muted/90 mb-6 sm:mb-8 max-w-xl mx-auto lg:mx-0">
+                  <Link href="/blog/what-is-k1177-game-pakistan" className="text-accent hover:underline">
+                    What is K1177?
+                  </Link>
+                  <span className="mx-2 text-muted/50">·</span>
+                  <Link href="/blog/k1177-features-guide-pakistan" className="text-accent hover:underline">
+                    Features
+                  </Link>
+                  <span className="mx-2 text-muted/50">·</span>
+                  <Link href="/blog/k1177-pros-and-cons-pakistan" className="text-accent hover:underline">
+                    Pros &amp; cons
+                  </Link>
+                  <span className="mx-2 text-muted/50">·</span>
+                  <Link href="/blog/k1177-faq-pakistan" className="text-accent hover:underline">
+                    FAQ
+                  </Link>
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center lg:items-start justify-center lg:justify-start mb-6 sm:mb-8">
                   <DownloadButton size="lg" label="DOWNLOAD K1177" blink />

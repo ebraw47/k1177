@@ -47,7 +47,7 @@ export default function CardRummyForPCPage() {
     "@type": "TechArticle",
     "headline": "K1177 for PC Download Latest Version Free 2026",
     "description": "Complete guide to download and play K1177 on PC using Android emulator. Learn about system requirements, best emulators, and features.",
-    "image": "https://k1177apk.com.pk/k1177-game-logo.webp",
+    "image": "https://k1177apk.com.pk/k1177-game-logo-site.webp",
     "author": {
       "@type": "Organization",
       "name": "K1177",
@@ -58,7 +58,7 @@ export default function CardRummyForPCPage() {
       "name": "K1177",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://k1177apk.com.pk/k1177-game-logo.webp"
+        "url": "https://k1177apk.com.pk/k1177-game-logo-site.webp"
       }
     },
     "datePublished": "2026-01-03",
@@ -106,7 +106,7 @@ export default function CardRummyForPCPage() {
         <div className="flex justify-center mb-12">
           <div className="relative" style={{ width: '280px', height: '280px', maxWidth: '100%' }}>
             <Image
-              src="/k1177-game-logo.webp"
+              src="/k1177-game-logo-site.webp"
               alt="K1177 for PC"
               width={280}
               height={280}

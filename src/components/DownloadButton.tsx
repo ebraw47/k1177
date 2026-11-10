@@ -30,7 +30,7 @@ export default function DownloadButton({
     <a
       href={DOWNLOAD_APP_URL}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="noopener noreferrer sponsored"
       aria-label="Download K1177 APK for Android"
       className={`download-btn inline-flex w-fit max-w-full items-center justify-center font-bold tracking-wide text-[#1a1500] ${sizeClasses[size]} ${blink ? 'download-btn--blink' : ''} ${className}`}
     >

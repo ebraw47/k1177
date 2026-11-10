@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: `${SITE_URL}/k1177-game-logo.webp`,
+        url: `${SITE_URL}/k1177-game-logo-site.webp`,
         width: 1200,
         height: 630,
         alt: 'Download K1177 APK Pakistan',
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'K1177 Game Free Download Pakistan — Official APK 2026',
     description: `Download ${BRAND_NAME} APK (${APP_VERSION}, ${APP_SIZE}) for Android in Pakistan.`,
-    images: [`${SITE_URL}/k1177-game-logo.webp`],
+    images: [`${SITE_URL}/k1177-game-logo-site.webp`],
   },
 };
 
@@ -83,7 +83,7 @@ export default function DownloadPage() {
       `${SITE_URL}/k1177game-login.webp`,
       `${SITE_URL}/k1177-game-register.webp`,
     ],
-    image: `${SITE_URL}/k1177-game-logo.webp`,
+    image: `${SITE_URL}/k1177-game-logo-site.webp`,
     author: {
       '@type': 'Organization',
       name: BRAND_NAME,
@@ -135,7 +135,7 @@ export default function DownloadPage() {
         <div className="flex justify-center mb-12">
           <div className="relative" style={{ width: '320px', height: '320px', maxWidth: '100%' }}>
             <Image
-              src="/k1177-game-logo.webp"
+              src="/k1177-game-logo-site.webp"
               alt="K1177 Game logo — free APK download Pakistan"
               width={320}
               height={320}

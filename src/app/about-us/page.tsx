@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: `${SITE_URL}/k1177-game-logo.webp`,
+        url: `${SITE_URL}/k1177-game-logo-site.webp`,
         width: 1200,
         height: 630,
         alt: 'About K1177 — k1177apk.com.pk',
@@ -72,7 +72,7 @@ export default function AboutPage() {
                 <Link href="/" className="block">
                   <div className="relative w-[280px] h-[280px] md:w-[320px] md:h-[320px] mx-auto md:mx-0 rounded-lg overflow-hidden bg-secondary">
                     <Image
-                      src="/k1177-game-logo.webp"
+                      src="/k1177-game-logo-site.webp"
                       alt="K1177 logo"
                       width={320}
                       height={320}
@@ -173,7 +173,7 @@ export default function AboutPage() {
               '@type': 'Organization',
               name: SITE_DOMAIN,
               url: SITE_URL,
-              logo: `${SITE_URL}/k1177-game-logo.webp`,
+              logo: `${SITE_URL}/k1177-game-logo-site.webp`,
               description: `Information site about ${BRAND_NAME} APK and payments in Pakistan.`,
               contactPoint: {
                 '@type': 'ContactPoint',

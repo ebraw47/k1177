@@ -7,6 +7,10 @@ const BlogCategoryDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
   
   const categories = [
+    { name: 'What Is K1177', href: '/blog/what-is-k1177-game-pakistan' },
+    { name: 'Features Guide', href: '/blog/k1177-features-guide-pakistan' },
+    { name: 'Pros & Cons', href: '/blog/k1177-pros-and-cons-pakistan' },
+    { name: 'FAQ', href: '/blog/k1177-faq-pakistan' },
     { name: 'Account & Login', href: '/blog/create-k1177-account-and-login' },
     { name: 'Download & Install', href: '/blog/how-to-download-install-k1177-apk-pakistan' },
     { name: 'Deposit Guide', href: '/blog/k1177-deposit-jazzcash-easypaisa-guide' },

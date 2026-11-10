@@ -389,7 +389,7 @@ export default function WithdrawMoneyPage() {
                 "inLanguage": "en-US",
                 "about": { "@type": "Thing", "name": "K1177", "url": "https://k1177apk.com.pk" },
                 "mainEntity": { "@id": "https://k1177apk.com.pk/withdraw-money-from-k1177#howto" },
-                "primaryImageOfPage": { "@type": "ImageObject", "url": "https://k1177apk.com.pk/k1177-game-logo.webp" }
+                "primaryImageOfPage": { "@type": "ImageObject", "url": "https://k1177apk.com.pk/k1177-game-logo-site.webp" }
               },
               {
                 "@id": "https://k1177apk.com.pk/withdraw-money-from-k1177#howto",

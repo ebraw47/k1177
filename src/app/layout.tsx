@@ -201,7 +201,7 @@ export default function RootLayout({
               "url": "https://k1177apk.com.pk",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://k1177apk.com.pk/k1177-game-logo.webp",
+                "url": "https://k1177apk.com.pk/k1177-game-logo-site.webp",
                 "width": 512,
                 "height": 512
               },

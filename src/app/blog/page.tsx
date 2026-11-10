@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: `${SITE_URL}/k1177-game-logo.webp`,
+        url: `${SITE_URL}/k1177-game-logo-site.webp`,
         width: 1200,
         height: 630,
         alt: 'K1177 Blog',
@@ -49,12 +49,44 @@ export const metadata: Metadata = {
 /** SERP-matched K1177 topics only */
 const posts = [
   {
+    slug: 'what-is-k1177-game-pakistan',
+    title: 'What Is K1177 Game? Pakistan Explained',
+    description:
+      'Clear overview: what K1177 is, how it works, who it is for, and how JazzCash/EasyPaisa fit in.',
+    readTime: '10 min read',
+    featured: true,
+  },
+  {
+    slug: 'k1177-features-guide-pakistan',
+    title: 'K1177 Features Guide Pakistan 2026',
+    description:
+      'Lobby, wallets, bonuses, comparison table, and old vs new improvements in the latest APK.',
+    readTime: '11 min read',
+    featured: false,
+  },
+  {
+    slug: 'k1177-pros-and-cons-pakistan',
+    title: 'K1177 Pros and Cons Pakistan 2026',
+    description:
+      'Honest advantages and drawbacks for Pakistani players before you deposit.',
+    readTime: '9 min read',
+    featured: false,
+  },
+  {
+    slug: 'k1177-faq-pakistan',
+    title: 'K1177 FAQ Pakistan',
+    description:
+      'Download, Google Play myths, login, deposits, withdrawals, bonuses, and safety — answered.',
+    readTime: '8 min read',
+    featured: false,
+  },
+  {
     slug: 'k1177-app-review-2026',
     title: 'K1177 App Review 2026',
     description:
       'Honest review: earning games, JazzCash & EasyPaisa, pros, cons, and payout notes for Pakistan.',
     readTime: '12 min read',
-    featured: true,
+    featured: false,
   },
   {
     slug: 'how-to-download-install-k1177-apk-pakistan',

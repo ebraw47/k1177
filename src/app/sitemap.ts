@@ -2,6 +2,10 @@ import type { MetadataRoute } from 'next';
 import { SITE_URL } from '@/lib/constants';
 
 const blogSlugs = [
+  'what-is-k1177-game-pakistan',
+  'k1177-features-guide-pakistan',
+  'k1177-pros-and-cons-pakistan',
+  'k1177-faq-pakistan',
   'k1177-app-review-2026',
   'how-to-download-install-k1177-apk-pakistan',
   'create-k1177-account-and-login',

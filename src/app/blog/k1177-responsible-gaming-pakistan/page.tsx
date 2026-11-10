@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: 'article',
     images: [
       {
-        url: `${SITE_URL}/k1177-game-logo.webp`,
+        url: `${SITE_URL}/k1177-game-logo-site.webp`,
         width: 1200,
         height: 630,
         alt: 'K1177 Responsible Gaming Pakistan',
@@ -42,7 +42,7 @@ export default function Page() {
         description="Play K1177 responsibly in Pakistan: set limits, never chase losses, and keep real-money gaming 18+ only."
         slug="k1177-responsible-gaming-pakistan"
         datePublished="2026-11-05"
-        image={`${SITE_URL}/k1177-game-logo.webp`}
+        image={`${SITE_URL}/k1177-game-logo-site.webp`}
       />
       <nav className="text-sm text-muted/80 mb-6">
         <Link href="/" className="hover:text-accent">
@@ -61,7 +61,7 @@ export default function Page() {
       <p className="text-muted/80 text-sm mb-8">Updated November 2026 · K1177 Pakistan guide</p>
       <div className="k1177-blog-shot mb-10">
         <Image
-          src="/k1177-game-logo.webp"
+          src="/k1177-game-logo-site.webp"
           alt="K1177 — play responsibly, 18+ only"
           width={640}
           height={640}
