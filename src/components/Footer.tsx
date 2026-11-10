@@ -16,9 +16,6 @@ export default function Footer() {
               Deposit and withdraw with <WalletLinks className="text-accent hover:underline" /> when
               listed. Play responsibly (18+).
             </p>
-            <div className="flex items-center gap-3 mt-1">
-              <FacebookLogoLink size="lg" />
-            </div>
           </div>
 
           <div>
@@ -130,13 +127,17 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-accent/15 mt-8 pt-4 pb-3 text-center text-sm text-muted/80">
-          <p className="mb-0">
-            © 2026 K1177. All rights reserved. |{' '}
-            <Link href="/" className="hover:text-accent">
-              {SITE_DOMAIN}
-            </Link>
-          </p>
+        <div className="border-t border-accent/15 mt-8 pt-4 pb-3 text-sm text-muted/80">
+          <div className="flex items-center justify-between gap-4">
+            <FacebookLogoLink size="lg" className="flex-shrink-0" />
+            <p className="mb-0 text-center flex-1">
+              © 2026 K1177. All rights reserved. |{' '}
+              <Link href="/" className="hover:text-accent">
+                {SITE_DOMAIN}
+              </Link>
+            </p>
+            <span className="w-9 flex-shrink-0 hidden sm:block" aria-hidden="true" />
+          </div>
         </div>
       </div>
     </footer>
