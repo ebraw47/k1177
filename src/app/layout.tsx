@@ -1,10 +1,9 @@
 import type { Metadata, Viewport } from "next";
-import { Poppins } from "next/font/google";
+import { Fugaz_One, Poppins } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import DeferredStyles from "@/components/DeferredStyles";
 import ScrollToTopWrapper from "@/components/ScrollToTopWrapper";
 import WebVitalsTracker from "@/components/WebVitalsTracker";
 
@@ -13,6 +12,14 @@ const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700", "800"],
   display: "swap",
   variable: "--font-poppins",
+});
+
+const fugazOne = Fugaz_One({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+  variable: "--font-logo",
+  preload: true,
 });
 
 export const viewport: Viewport = {
@@ -123,18 +130,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={poppins.variable} suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${poppins.variable} ${fugazOne.variable}`}
+      suppressHydrationWarning
+    >
       <head>
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <meta name="geo.region" content="PK" />
         <meta name="geo.placename" content="Pakistan" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap"
-          rel="stylesheet"
-        />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16" />
         <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
@@ -184,7 +189,6 @@ export default function RootLayout({
         <main className="flex-grow relative z-10">
         {children}
         </main>
-        <DeferredStyles />
         <Footer />
         <ScrollToTopWrapper />
         <WebVitalsTracker />

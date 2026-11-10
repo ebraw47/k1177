@@ -283,7 +283,7 @@ export default function HomePage() {
         <div className="container mx-auto relative z-[1]">
           <div className="k1177-hero-glass">
             <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-14 relative z-[1]">
-              <div className="flex-1 text-center lg:text-left min-w-0">
+              <div className="flex-1 text-center lg:text-left min-w-0 order-2 lg:order-1">
                 <h1 className="mb-3 flex justify-center lg:justify-start">
                   <span className="sr-only">
                     K1177 Game Free Download Online Money App In Pakistan V1.6
@@ -325,19 +325,19 @@ export default function HomePage() {
                   from the button below.
                 </p>
                 <p className="text-sm text-muted/90 mb-6 sm:mb-8 max-w-xl mx-auto lg:mx-0">
-                  <Link href="/blog/what-is-k1177-game-pakistan" className="text-accent hover:underline">
+                  <Link href="/blog/what-is-k1177-game-pakistan" className="text-accent underline underline-offset-2 hover:text-[#ffe566]">
                     What is K1177?
                   </Link>
                   <span className="mx-2 text-muted/50">·</span>
-                  <Link href="/blog/k1177-features-guide-pakistan" className="text-accent hover:underline">
+                  <Link href="/blog/k1177-features-guide-pakistan" className="text-accent underline underline-offset-2 hover:text-[#ffe566]">
                     Features
                   </Link>
                   <span className="mx-2 text-muted/50">·</span>
-                  <Link href="/blog/k1177-pros-and-cons-pakistan" className="text-accent hover:underline">
+                  <Link href="/blog/k1177-pros-and-cons-pakistan" className="text-accent underline underline-offset-2 hover:text-[#ffe566]">
                     Pros &amp; cons
                   </Link>
                   <span className="mx-2 text-muted/50">·</span>
-                  <Link href="/blog/k1177-faq-pakistan" className="text-accent hover:underline">
+                  <Link href="/blog/k1177-faq-pakistan" className="text-accent underline underline-offset-2 hover:text-[#ffe566]">
                     FAQ
                   </Link>
                 </p>
@@ -360,17 +360,19 @@ export default function HomePage() {
                   *Android {APP_OS.replace('Android ', '')} · {APP_VERSION} · {SITE_DOMAIN}
                 </p>
               </div>
-              <div className="flex-shrink-0 flex flex-col items-center">
+              <div className="flex-shrink-0 flex flex-col items-center order-1 lg:order-2">
                 <div className="k1177-logo-glass">
                   <div className="k1177-main-logo relative w-[200px] h-[200px] sm:w-[240px] sm:h-[240px] md:w-[320px] md:h-[320px]">
                     <Image
-                      src={LOGO_PATH}
+                      src="/k1177-game-logo-lcp.webp"
                       alt="K1177 Game Official Logo"
-                      width={340}
-                      height={340}
+                      width={320}
+                      height={320}
+                      sizes="(max-width: 640px) 200px, (max-width: 768px) 240px, 320px"
                       className="relative z-[1] object-contain w-full h-full rounded-[22%]"
                       priority
                       fetchPriority="high"
+                      quality={75}
                     />
                     <span className="k1177-star k1177-star-1" aria-hidden="true" />
                     <span className="k1177-star k1177-star-2" aria-hidden="true" />

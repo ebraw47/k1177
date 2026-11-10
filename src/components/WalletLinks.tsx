@@ -8,7 +8,7 @@ type WalletLinksProps = {
   plain?: boolean;
 };
 
-const linkClass = 'text-accent hover:underline font-semibold';
+const linkClass = 'text-accent underline underline-offset-2 hover:text-[#ffe566] font-semibold';
 const plainClass = 'text-accent font-semibold';
 
 export function JazzCashLink({

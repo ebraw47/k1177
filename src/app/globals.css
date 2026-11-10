@@ -6,7 +6,6 @@
   --foreground-rgb: 232, 248, 238;
   --background-start-rgb: 4, 24, 14;
   --background-end-rgb: 2, 14, 8;
-  --font-logo: 'Fugaz One', cursive;
   --sk-bg: #03150c;
   --sk-primary: #062816;
   --sk-secondary: #0d4226;
@@ -61,6 +60,8 @@ body {
   font-style: normal;
   letter-spacing: 0.04em;
   color: #f5c518;
+  /* Reserve display metrics to limit FOIT/FOUT CLS on the hero brand */
+  font-size-adjust: 0.5;
   background: none;
   text-shadow:
     0 1px 0 #8a6a00,
@@ -72,8 +73,10 @@ body {
 }
 
 .k1177-wordmark--hero {
+  display: inline-block;
   line-height: 1;
   font-size: clamp(2.35rem, 11vw, 5.5rem);
+  min-height: 1.05em;
   text-shadow:
     0 1px 0 #9a7800,
     0 2px 0 #7a5e00,
@@ -458,6 +461,7 @@ section.overflow-visible {
   position: relative;
   padding: 0.85rem;
   border-radius: 28%;
+  contain: layout style;
   background:
     linear-gradient(160deg, rgba(255, 255, 255, 0.18) 0%, rgba(61, 207, 122, 0.08) 45%, rgba(0, 0, 0, 0.2) 100%);
   border: 1px solid rgba(255, 255, 255, 0.28);
@@ -529,16 +533,24 @@ section.overflow-visible {
 /* Floating logo — radius clips baked-in black corners */
 .k1177-main-logo {
   isolation: isolate;
+  aspect-ratio: 1 / 1;
   background: transparent !important;
   border: none !important;
   border-radius: 22% !important;
   overflow: hidden !important;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
-  animation: k1177-main-logo-glow 3s ease-in-out infinite;
+  /* Static glow only — animated filter/box-shadow is non-composited (CLS/jank) */
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.35),
+    0 0 36px rgba(61, 207, 122, 0.28);
 }
 
 .k1177-main-logo img {
   border-radius: 22%;
+  width: 100%;
+  max-width: none;
+  height: 100% !important;
+  object-fit: contain;
+  display: block;
 }
 
 .k1177-main-logo::before {
