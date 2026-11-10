@@ -1,12 +1,13 @@
 'use client';
 
 import Link from 'next/link';
+import FacebookLogoLink from './FacebookLogoLink';
 import MobileNavigation from './MobileNavigation';
 
 export default function Header() {
   return (
     <header className="k1177-glass-header sticky top-0 z-30 py-3 px-4 md:px-8">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center gap-3">
         <Link href="/" className="flex items-center flex-shrink-0">
           <span className="k1177-wordmark k1177-wordmark--nav text-xl md:text-2xl">
             K1177
@@ -40,7 +41,10 @@ export default function Header() {
           </Link>
         </nav>
 
-        <MobileNavigation />
+        <div className="flex items-center gap-3 flex-shrink-0">
+          <FacebookLogoLink size="md" />
+          <MobileNavigation />
+        </div>
       </div>
     </header>
   );

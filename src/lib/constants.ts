@@ -15,7 +15,7 @@ export const DOWNLOAD_APP_URL =
 /** Official Facebook page — override with NEXT_PUBLIC_FACEBOOK_URL */
 export const FACEBOOK_URL =
   process.env.NEXT_PUBLIC_FACEBOOK_URL ||
-  'https://www.facebook.com/';
+  'https://www.facebook.com/share/1Bwsce4L1M/?mibextid=wwXIfr';
 
 /** Official Pakistan wallet sites */
 export const JAZZCASH_URL = 'https://www.jazzcash.com.pk/';

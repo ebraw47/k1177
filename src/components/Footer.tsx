@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import DownloadButton from '@/components/DownloadButton';
+import FacebookLogoLink from '@/components/FacebookLogoLink';
 import WalletLinks from '@/components/WalletLinks';
-import { EASYPAISA_URL, FACEBOOK_URL, JAZZCASH_URL, SITE_DOMAIN } from '@/lib/constants';
+import { EASYPAISA_URL, JAZZCASH_URL, SITE_DOMAIN } from '@/lib/constants';
 
 export default function Footer() {
   return (
@@ -15,25 +16,9 @@ export default function Footer() {
               Deposit and withdraw with <WalletLinks className="text-accent hover:underline" /> when
               listed. Play responsibly (18+).
             </p>
-            {FACEBOOK_URL && FACEBOOK_URL !== 'https://www.facebook.com/' && (
-              <div className="flex space-x-4">
-                <a
-                  href={FACEBOOK_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="K1177 on Facebook"
-                >
-                  <svg
-                    className="w-5 h-5 transition-opacity hover:opacity-90"
-                    fill="#1877F2"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path d="M18.77,7.46H14.5v-1.9c0-0.9,0.6-1.1,1-1.1h3V0.13H14.5c-4.1,0-5,2.9-5,4.8v2.5H6v4.5h3.5V22h5V11.96h3.35L18.77,7.46z" />
-                  </svg>
-                </a>
-              </div>
-            )}
+            <div className="flex items-center gap-3 mt-1">
+              <FacebookLogoLink size="lg" />
+            </div>
           </div>
 
           <div>

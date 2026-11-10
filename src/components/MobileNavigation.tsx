@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import DownloadButton from '@/components/DownloadButton';
+import FacebookLogoLink from '@/components/FacebookLogoLink';
 
 type NavItem = {
   href: string;
@@ -225,6 +226,7 @@ export default function MobileNavigation() {
 
         <div className="px-5 pt-4 pb-8 border-t border-accent/20 flex flex-col items-center shrink-0 safe-area-pb">
           <DownloadButton size="sm" label="DOWNLOAD K1177" />
+          <FacebookLogoLink size="lg" className="mt-4" />
           <p className="text-center text-muted/70 text-xs mt-3">~51 MB · Android 5.0+ · V1.6</p>
         </div>
       </div>,
